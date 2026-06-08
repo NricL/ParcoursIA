@@ -174,7 +174,7 @@ a:hover { color: var(--blue-dark); }
   height: 8px; background: rgba(255,255,255,.08); border-radius: 100px; overflow: hidden;
 }
 .counter-fill {
-  height: 100%; width: 35%;
+  height: 100%; width: 40%;
   background: linear-gradient(90deg, #4d9fff, #82b9ff);
   border-radius: 100px;
   animation: fillBar 1.8s ease-out;
