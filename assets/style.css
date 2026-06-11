@@ -315,7 +315,7 @@ a:hover { color: #ffffff; }
 }
 .engagement-fill {
   height: 100%;
-  width: 40%;
+  width: 50%;
   background: linear-gradient(90deg, var(--ms-blue), var(--accent));
   border-radius: 100px;
   box-shadow: 0 0 14px rgba(15, 108, 189, .35);
