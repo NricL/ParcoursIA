@@ -6,14 +6,13 @@ const io = new IntersectionObserver((entries) => {
       io.unobserve(e.target);
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.1 });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-// Animated counter for hero
-const counter = document.querySelector('[data-counter]');
-if (counter) {
+// Counter animation
+document.querySelectorAll('[data-counter]').forEach(counter => {
   const target = parseInt(counter.dataset.counter, 10);
-  const dur = 1600;
+  const dur = 1800;
   const start = performance.now();
   const fmt = new Intl.NumberFormat('fr-FR');
   function step(now) {
@@ -23,4 +22,11 @@ if (counter) {
     if (t < 1) requestAnimationFrame(step);
   }
   requestAnimationFrame(step);
-}
+});
+
+// Lightbox close on Escape
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.lightbox.open').forEach(lb => lb.classList.remove('open'));
+  }
+});

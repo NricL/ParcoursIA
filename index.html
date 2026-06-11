@@ -3,86 +3,101 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Microsoft France × Démo Formation à l'IA — VivaTech 2026</title>
+  <title>ParcoursIA — Microsoft France · Démo Formation à l'IA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 
+  <div class="ambient-bg"></div>
+
+  <nav class="topnav">
+    <a href="index.html" class="topnav-brand">
+      <span class="ms-logo"><span></span><span></span><span></span><span></span></span>
+      Microsoft France
+    </a>
+    <span class="topnav-sep"></span>
+    <span class="topnav-context">ParcoursIA · démo VivaTech 2026</span>
+    <div class="topnav-actes">
+      <a href="acte-1-sensibiliser.html"><span class="num">1</span> Sensibiliser</a>
+      <a href="acte-2-passer-a-l-action.html"><span class="num">2</span> Passer à l'action</a>
+      <a href="acte-3-mettre-en-oeuvre.html"><span class="num">3</span> Mettre en œuvre</a>
+    </div>
+  </nav>
+
   <!-- HERO -->
   <section class="hero">
     <div class="hero-left">
-      <div class="hero-logos">
-        <span class="hero-ms">
-          <span class="hero-ms-square"><span></span><span></span><span></span><span></span></span>
-          Microsoft France
-        </span>
-        <span class="hero-divider"></span>
-        <span class="hero-context">Démo Formation à l'IA · Stand VivaTech 2026</span>
-      </div>
-
-      <span class="hero-badge">
-        <span class="hero-badge-dot"></span>
+      <span class="eyebrow-badge">
+        <span class="eyebrow-dot"></span>
         Engagement Choose France · en passe d'être tenu
       </span>
 
       <h1 class="hero-title">
-        Former <em>1 million</em> de Français à l'IA d'ici 2027.
+        Former <span class="gradient">1&nbsp;million</span> de Français à l'IA d'ici 2027.
       </h1>
 
       <p class="hero-tagline">
-        Un parcours en 3 actes : sensibiliser, passer à l'action, former des talents. Le seul dispositif privé articulé avec la politique publique française.
+        Un parcours en 3 actes : sensibiliser, passer à l'action, mettre en œuvre et reconvertir. Le seul dispositif privé articulé avec la politique publique française.
       </p>
 
-      <!-- Funnel BPI : le PROBLÈME en 3 chiffres, visible above-the-fold -->
-      <div class="hero-funnel">
-        <span class="hero-funnel-label">Le problème</span>
-        <div class="hf-cell">
-          <div class="hf-num">47,8<small>%</small></div>
-          <div class="hf-cap">Diffusion</div>
-          <div class="hf-desc">des Français utilisent l'IA générative</div>
+      <div class="funnel">
+        <div class="funnel-card">
+          <div class="funnel-cap">Diffusion</div>
+          <div class="funnel-num">47,8<small>%</small></div>
+          <div class="funnel-desc">des Français utilisent l'IA générative</div>
+          <div class="funnel-arrow">→</div>
         </div>
-        <div class="hf-cell">
-          <div class="hf-num">32<small>%</small></div>
-          <div class="hf-cap">Adoption</div>
-          <div class="hf-desc">des PME et ETI françaises ont adopté l'IA</div>
+        <div class="funnel-card">
+          <div class="funnel-cap">Adoption</div>
+          <div class="funnel-num">32<small>%</small></div>
+          <div class="funnel-desc">des PME et ETI françaises ont adopté l'IA</div>
+          <div class="funnel-arrow">→</div>
         </div>
-        <div class="hf-cell">
-          <div class="hf-num">57<small>%</small></div>
-          <div class="hf-cap">Sans stratégie</div>
-          <div class="hf-desc">des dirigeants n'ont pas de stratégie IA</div>
+        <div class="funnel-card">
+          <div class="funnel-cap">Sans stratégie</div>
+          <div class="funnel-num">57<small>%</small></div>
+          <div class="funnel-desc">des dirigeants n'ont pas de stratégie IA</div>
         </div>
       </div>
-      <p class="hero-funnel-footnote">
+
+      <p class="funnel-footnote">
         Diffusion ne veut pas dire adoption, encore moins intégration effective. C'est tout l'enjeu de la transformation des pratiques et des métiers à l'ère de l'IA.
       </p>
 
-      <a href="#parcours" class="hero-cta">
-        Commencer le parcours
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-      </a>
+      <div class="hero-cta-row">
+        <a href="#parcours" class="btn-primary">
+          Commencer le parcours
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="acte-2-passer-a-l-action.html" class="btn-secondary">
+          Voir la démo À vous l'IA
+        </a>
+      </div>
     </div>
 
     <div class="hero-right">
-      <div class="counter-card">
-        <div class="counter-label">Notre engagement · à mi-parcours</div>
-        <div class="counter-big"><span data-counter="400000">0</span></div>
-        <div class="counter-of">/ 1 000 000 Français formés</div>
+      <div class="engagement-card">
+        <div class="engagement-label">Notre engagement · à mi-parcours</div>
+        <div class="engagement-big"><span data-counter="400000">0</span></div>
+        <div class="engagement-of">/ 1 000 000 Français formés</div>
 
-        <div class="counter-progress-row">
+        <div class="engagement-progress">
           <span>Progression</span>
           <strong>40 %</strong>
         </div>
-        <div class="counter-bar"><div class="counter-fill"></div></div>
+        <div class="engagement-bar">
+          <div class="engagement-fill"></div>
+        </div>
 
-        <div class="counter-mini">
-          <div class="counter-mini-item">
+        <div class="engagement-mini">
+          <div>
             <div class="num">850 K</div>
             <div class="lbl">parcours engagés</div>
           </div>
-          <div class="counter-mini-item">
+          <div>
             <div class="num">18 mois</div>
             <div class="lbl">jusqu'à l'échéance 2027</div>
           </div>
@@ -91,105 +106,148 @@
     </div>
   </section>
 
+  <!-- PARTNERS RIBBON -->
+  <section class="partners-ribbon">
+    <div class="partners-inner">
+      <span class="partners-label">Partenaires &amp; cas clients du parcours</span>
+      <span class="partner-wordmark">Forvia</span>
+      <span class="partner-logo"><img src="assets/logos/impact-ai.png" alt="Impact AI" /></span>
+      <span class="partner-wordmark">Conseil&nbsp;National&nbsp;IA&nbsp;&amp;&nbsp;Numérique</span>
+      <span class="partner-logo"><img src="assets/logos/la-mednum.png" alt="La Mednum" /></span>
+      <span class="partner-wordmark">France&nbsp;Travail</span>
+      <span class="partner-logo"><img src="assets/logos/simplon.svg" alt="Simplon" /></span>
+      <span class="partner-logo"><img src="assets/logos/bpifrance.png" alt="Bpifrance Le Lab" /></span>
+    </div>
+  </section>
+
   <!-- PARCOURS -->
   <section id="parcours" class="parcours">
-    <div class="parcours-inner">
-      <div class="section-tag reveal">Le parcours en 3 actes</div>
-      <h2 class="section-title reveal">
-        Former à l'IA, ce n'est plus un module. <br/>
-        C'est un parcours.
-      </h2>
-      <p class="section-subtitle reveal">
-        Microsoft est le seul acteur qui articule les 3 actes, en grande partie gratuit, en s'appuyant sur la politique publique française. Cliquez sur un acte pour explorer son contenu et lancer les démos.
-      </p>
+    <div class="section-eyebrow reveal">Le parcours en 3 actes</div>
+    <h2 class="section-title reveal">
+      Former à l'IA, ce n'est plus un module.<br/>C'est un parcours.
+    </h2>
+    <p class="section-subtitle reveal">
+      Cliquez sur un acte pour explorer son contenu et lancer les démos en direct sur le stand.
+    </p>
 
-      <div class="parcours-grid">
+    <div class="actes-grid">
 
-        <a href="acte-1-sensibiliser.html" class="act-card act-1 reveal">
-          <div class="act-card-num">1</div>
-          <div class="act-card-tag">Acte 1 — Sensibiliser</div>
-          <h3 class="act-card-title">Donner à tous la nouvelle littéracie</h3>
-          <p class="act-card-desc">
-            La nouvelle littéracie repose sur 3 piliers : data &amp; IA, IA responsable, IA et mise en pratique. Microsoft outille les trois, gratuitement.
-          </p>
-          <div class="act-card-chips">
-            <span class="act-chip">Forvia 22 K</span>
-            <span class="act-chip">Cafés IA · 40 K</span>
-            <span class="act-chip">France Travail</span>
+      <a href="acte-1-sensibiliser.html" class="acte-card reveal">
+        <div class="acte-num-row">
+          <div class="acte-num">1</div>
+          <div class="acte-duration">7 min</div>
+        </div>
+        <div class="acte-tag">Acte 1 · Sensibiliser</div>
+        <h3 class="acte-title">Donner à tous la nouvelle littéracie</h3>
+        <p class="acte-desc">
+          La nouvelle littéracie repose sur 3 piliers : data &amp; IA, IA responsable, IA et mise en pratique. Microsoft outille les trois, gratuitement.
+        </p>
+        <div class="acte-stats">
+          <div class="acte-stat-item">
+            <div class="num">22 K</div>
+            <div class="lbl">salariés Forvia formés</div>
           </div>
-          <div class="act-card-footer">
-            <span class="act-card-duration">7 min sur le stand</span>
-            <span class="act-card-link">
-              Explorer
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-            </span>
+          <div class="acte-stat-item">
+            <div class="num">40 K</div>
+            <div class="lbl">participants à la Semaine de l'IA</div>
           </div>
-        </a>
+        </div>
+        <div class="acte-partners">
+          <span class="acte-partners-label">Avec</span>
+          <span class="acte-partner-chip">Forvia</span>
+          <span class="acte-partner-chip">Impact AI</span>
+          <span class="acte-partner-chip">CNNum</span>
+          <span class="acte-partner-chip">La Mednum</span>
+          <span class="acte-partner-chip">France Travail</span>
+        </div>
+        <span class="acte-cta">
+          Explorer l'Acte 1
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </span>
+      </a>
 
-        <a href="acte-2-passer-a-l-action.html" class="act-card act-2 reveal">
-          <div class="act-card-num">2</div>
-          <div class="act-card-tag">Acte 2 — Passer à l'action</div>
-          <h3 class="act-card-title">Utiliser l'IA dans son métier, dès aujourd'hui</h3>
-          <p class="act-card-desc">
-            À vous l'IA : l'agent conversationnel Microsoft France pour les PME. 1 000 cas d'usage couvrant toutes les fonctions, gratuit, open source.
-          </p>
-          <div class="act-card-chips">
-            <span class="act-chip">À vous l'IA</span>
-            <span class="act-chip">1 000 cas d'usage</span>
-            <span class="act-chip">Open Source</span>
+      <a href="acte-2-passer-a-l-action.html" class="acte-card reveal">
+        <div class="acte-num-row">
+          <div class="acte-num">2</div>
+          <div class="acte-duration">4 min</div>
+        </div>
+        <div class="acte-tag">Acte 2 · Passer à l'action</div>
+        <h3 class="acte-title">Utiliser l'IA dans son métier, dès aujourd'hui</h3>
+        <p class="acte-desc">
+          À vous l'IA : l'agent conversationnel Microsoft France pour les PME. 1 000 cas d'usage couvrant toutes les fonctions, gratuit, en open source.
+        </p>
+        <div class="acte-stats">
+          <div class="acte-stat-item">
+            <div class="num">1 000</div>
+            <div class="lbl">cas d'usage métier</div>
           </div>
-          <div class="act-card-footer">
-            <span class="act-card-duration">4 min sur le stand</span>
-            <span class="act-card-link">
-              Explorer
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-            </span>
+          <div class="acte-stat-item">
+            <div class="num">99 %</div>
+            <div class="lbl">de PME ciblées (toutes fonctions)</div>
           </div>
-        </a>
+        </div>
+        <div class="acte-partners">
+          <span class="acte-partners-label">Produit</span>
+          <span class="acte-partner-chip">À vous l'IA</span>
+          <span class="acte-partner-chip">avouslia.fr</span>
+          <span class="acte-partner-chip">Open Source</span>
+        </div>
+        <span class="acte-cta">
+          Lancer la démo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </span>
+      </a>
 
-        <a href="acte-3-mettre-en-oeuvre.html" class="act-card act-3 reveal">
-          <div class="act-card-num">3</div>
-          <div class="act-card-tag">Acte 3 — Mettre en œuvre &amp; reconvertir</div>
-          <h3 class="act-card-title">Déployer en entreprise, offrir une voie aux métiers qui changent</h3>
-          <p class="act-card-desc">
-            Écoles IA Microsoft × Simplon : former les talents qui déploient l'IA en entreprise, et offrir une reconversion qualifiante. Cofinancé public-privé.
-          </p>
-          <div class="act-card-chips">
-            <span class="act-chip">Simplon</span>
-            <span class="act-chip">RNCP 6</span>
-            <span class="act-chip">1 500 diplômés</span>
+      <a href="acte-3-mettre-en-oeuvre.html" class="acte-card reveal">
+        <div class="acte-num-row">
+          <div class="acte-num">3</div>
+          <div class="acte-duration">4 min</div>
+        </div>
+        <div class="acte-tag">Acte 3 · Mettre en œuvre &amp; reconvertir</div>
+        <h3 class="acte-title">Déployer en entreprise, offrir une voie aux métiers qui changent</h3>
+        <p class="acte-desc">
+          Écoles IA Microsoft × Simplon : former les artisans de l'IA, pas que les experts. Cofinancement public-privé.
+        </p>
+        <div class="acte-stats">
+          <div class="acte-stat-item">
+            <div class="num">1 500</div>
+            <div class="lbl">diplômés depuis 2018</div>
           </div>
-          <div class="act-card-footer">
-            <span class="act-card-duration">4 min sur le stand</span>
-            <span class="act-card-link">
-              Explorer
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-            </span>
+          <div class="acte-stat-item">
+            <div class="num">98 %</div>
+            <div class="lbl">de sorties positives à 6 mois</div>
           </div>
-        </a>
+        </div>
+        <div class="acte-partners">
+          <span class="acte-partners-label">Avec</span>
+          <span class="acte-partner-chip with-logo"><img src="assets/logos/simplon.svg" alt="Simplon" /></span>
+          <span class="acte-partner-chip">RNCP 6</span>
+          <span class="acte-partner-chip">Cofinancé public-privé</span>
+        </div>
+        <span class="acte-cta">
+          Explorer l'Acte 3
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </span>
+      </a>
 
-      </div>
     </div>
   </section>
 
-  <!-- PROMESSE -->
-  <section class="promesse">
-    <div class="promesse-inner reveal">
-      <p class="promesse-quote">
-        L'enjeu n'est plus le coût de l'accès à la formation. <br/>
-        C'est <em>l'orchestration</em>.
-      </p>
-      <p class="promesse-signed">Microsoft France · Plan de compétences IA</p>
-    </div>
+  <!-- PROMISE -->
+  <section class="promise">
+    <p class="promise-text reveal">
+      L'enjeu n'est plus le coût de l'accès à la formation.<br/>
+      C'est <em>l'orchestration</em>.
+    </p>
   </section>
 
-  <footer>
+  <footer class="footer">
     <div class="footer-inner">
-      <div>© Microsoft France · Démo VivaTech 2026 · v2</div>
+      <div>© Microsoft France · ParcoursIA · démo VivaTech 2026</div>
       <div>
         Sources : <a href="https://news.microsoft.com/source/emea/">Microsoft Source EMEA</a> ·
         <a href="https://lelab.bpifrance.fr/">Bpifrance Le Lab</a> ·
-        <a href="https://avouslia.fr">À vous l'IA</a>
+        <a href="https://avouslia.fr">avouslia.fr</a>
       </div>
     </div>
   </footer>

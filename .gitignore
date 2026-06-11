@@ -4,5 +4,7 @@ package.json
 *.log
 .DS_Store
 capture-screenshots.js
+capture-logos.js
+capture-logos-v2.js
 compress.js
 assets/screenshots/*.png
