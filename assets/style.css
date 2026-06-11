@@ -357,24 +357,24 @@ a:hover { color: #ffffff; }
   margin-right: .5rem;
 }
 .partner-logo {
-  height: 44px;
+  height: 64px;
   display: inline-flex; align-items: center;
-  opacity: .9;
+  opacity: .92;
   transition: opacity .2s, transform .2s;
 }
-.partner-logo:hover { opacity: 1; transform: translateY(-1px); }
+.partner-logo:hover { opacity: 1; transform: translateY(-2px); }
 .partner-logo img,
-.partner-logo svg { height: 100%; width: auto; max-width: 160px; object-fit: contain; }
+.partner-logo svg { height: 100%; width: auto; max-width: 220px; object-fit: contain; }
 
 .partner-wordmark {
   display: inline-flex; align-items: center;
-  height: 44px;
-  padding: 0 16px;
-  border: 1.5px solid #1a1f2e;
+  height: 64px;
+  padding: 0 22px;
+  border: 2px solid #1a1f2e;
   background: transparent;
-  border-radius: 6px;
-  font-weight: 800; font-size: 16px;
-  letter-spacing: 2px;
+  border-radius: 8px;
+  font-weight: 800; font-size: 22px;
+  letter-spacing: 3px;
   color: #1a1f2e;
   text-transform: uppercase;
   transition: all .2s;
@@ -383,7 +383,7 @@ a:hover { color: #ffffff; }
 .partner-wordmark:hover {
   color: var(--ms-blue);
   border-color: var(--ms-blue);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 /* ============================================
