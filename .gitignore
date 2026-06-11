@@ -6,5 +6,9 @@ package.json
 capture-screenshots.js
 capture-logos.js
 capture-logos-v2.js
+capture-forvia.js
 compress.js
+rebuild-avouslia.js
 assets/screenshots/*.png
+assets/logos/*.png
+assets/logos/*.jpg
