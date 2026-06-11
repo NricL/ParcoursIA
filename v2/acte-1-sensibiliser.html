@@ -103,49 +103,67 @@
       </a>
     </section>
 
-    <!-- PILIER 3 — FRANCE TRAVAIL : Calendrier IA + vidéo YouTube -->
+    <!-- PILIER 3 — FRANCE TRAVAIL : vidéo YouTube + Calendrier IA en split layout -->
     <section id="pilier-3" class="section-pilier" style="margin-top:3rem;">
       <div class="section-eyebrow">Pilier 3</div>
       <h2 class="section-title">Littéracie IA et mise en pratique</h2>
       <p class="section-subtitle">Calendrier de l'IA — France Travail × Microsoft × Kokoroe. 31 micro-formations gratuites accessibles via l'Emploi Store. Public le plus exposé à la fracture numérique.</p>
 
-      <div class="embed-card reveal">
-        <div class="embed-head">
-          <div class="embed-head-left">
-            <div class="chrome-dots"><span></span><span></span><span></span></div>
-            <span>view.genially.com · Calendrier de l'IA</span>
+      <div class="split-embeds reveal">
+        <div class="embed-card split-left">
+          <div class="embed-head">
+            <div class="embed-head-left">
+              <div class="chrome-dots"><span></span><span></span><span></span></div>
+              <span>youtube.com · Présentation</span>
+            </div>
+            <button type="button" class="embed-head-link" onclick="document.getElementById('lightbox-yt').classList.add('open')">
+              Plein écran
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M14 10l7-7M9 21H3v-6M10 14l-7 7"/></svg>
+            </button>
           </div>
-          <a href="https://view.genially.com/67288c4f093d4dbcc411c48e" target="_blank" rel="noopener" class="embed-head-link">
-            Ouvrir plein écran
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M14 10l7-7M9 21H3v-6M10 14l-7 7"/></svg>
-          </a>
+          <div class="embed-iframe">
+            <iframe src="https://www.youtube-nocookie.com/embed/KHoftfBfrbM" title="Calendrier de l'IA — vidéo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+          </div>
         </div>
-        <div class="embed-iframe">
-          <iframe src="https://view.genially.com/67288c4f093d4dbcc411c48e" allow="fullscreen" allowfullscreen loading="lazy"></iframe>
+
+        <div class="embed-card split-right">
+          <div class="embed-head">
+            <div class="embed-head-left">
+              <div class="chrome-dots"><span></span><span></span><span></span></div>
+              <span>Calendrier interactif · 31 cases</span>
+            </div>
+            <button type="button" class="embed-head-link" onclick="document.getElementById('lightbox-cal').classList.add('open')">
+              Plein écran
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M14 10l7-7M9 21H3v-6M10 14l-7 7"/></svg>
+            </button>
+          </div>
+          <div class="embed-iframe">
+            <iframe src="https://view.genially.com/67288c4f093d4dbcc411c48e" allow="fullscreen" allowfullscreen loading="lazy"></iframe>
+          </div>
         </div>
       </div>
 
-      <div class="embed-card reveal">
-        <div class="embed-head">
-          <div class="embed-head-left">
-            <div class="chrome-dots"><span></span><span></span><span></span></div>
-            <span>youtube.com · Présentation Calendrier de l'IA</span>
-          </div>
-          <a href="https://youtu.be/KHoftfBfrbM" target="_blank" rel="noopener" class="embed-head-link">
-            Ouvrir sur YouTube
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M14 10l7-7M9 21H3v-6M10 14l-7 7"/></svg>
-          </a>
-        </div>
-        <div class="embed-iframe">
-          <iframe src="https://www.youtube-nocookie.com/embed/KHoftfBfrbM" title="Calendrier de l'IA — vidéo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-        </div>
-      </div>
-
-      <a href="https://www.emploi-store.fr/portail/services/leCalendrierDeLIa" target="_blank" rel="noopener" class="link-card">
-        Accéder au Calendrier de l'IA sur l'Emploi Store France Travail
+      <a href="https://www.emploi-store.fr/portail/services/leCalendrierDeLIa" target="_blank" rel="noopener" class="link-card" style="margin-top:1rem;">
+        Accéder au service en production sur l'Emploi Store France Travail
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M14 10l7-7M9 21H3v-6M10 14l-7 7"/></svg>
       </a>
     </section>
+
+    <!-- LIGHTBOX : YouTube -->
+    <div id="lightbox-yt" class="lightbox" onclick="this.classList.remove('open')">
+      <button class="lightbox-close" aria-label="Fermer">×</button>
+      <div class="lightbox-content" onclick="event.stopPropagation()">
+        <iframe src="https://www.youtube-nocookie.com/embed/KHoftfBfrbM?autoplay=0" title="Calendrier de l'IA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- LIGHTBOX : Calendrier Genially -->
+    <div id="lightbox-cal" class="lightbox" onclick="this.classList.remove('open')">
+      <button class="lightbox-close" aria-label="Fermer">×</button>
+      <div class="lightbox-content lightbox-content-square" onclick="event.stopPropagation()">
+        <iframe src="https://view.genially.com/67288c4f093d4dbcc411c48e" allow="fullscreen" allowfullscreen></iframe>
+      </div>
+    </div>
 
   </section>
 

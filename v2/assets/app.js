@@ -23,3 +23,10 @@ document.querySelectorAll('[data-counter]').forEach(counter => {
   }
   requestAnimationFrame(step);
 });
+
+// Lightbox close on Escape
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.lightbox.open').forEach(lb => lb.classList.remove('open'));
+  }
+});
