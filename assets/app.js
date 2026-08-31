@@ -14,7 +14,7 @@ document.querySelectorAll('[data-counter]').forEach(counter => {
   const target = parseInt(counter.dataset.counter, 10);
   const dur = 1800;
   const start = performance.now();
-  const fmt = new Intl.NumberFormat('fr-FR');
+  const fmt = new Intl.NumberFormat('en-US');
   function step(now) {
     const t = Math.min(1, (now - start) / dur);
     const eased = 1 - Math.pow(1 - t, 3);
