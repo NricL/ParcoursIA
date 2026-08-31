@@ -1,23 +1,25 @@
-# AI Pathway
+# ParcoursIA / AI Pathway
 
-Demo site for Microsoft France's AI training journey — VivaTech 2026.
+Site démo du parcours formation IA Microsoft France — VivaTech 2026.
+Microsoft France AI training journey demo site — VivaTech 2026.
 
 **Live:** https://nricl.github.io/ParcoursIA/
 
-## The 3-act journey
+## Versions
 
-1. **Raise Awareness** — Give everyone the new literacy (3 pillars: data & AI with Forvia/AI Literacy, responsible AI with Impact AI & AI Cafes, and AI literacy with hands-on practice with France Travail × Kokoroe)
-2. **Take Action** — A vous l'IA, the conversational agent for SMBs with 1,000 use cases
-3. **Implement & Reskill** — Microsoft × Simplon AI Schools, the RNCP level 6 AI Developer diploma
+1. **FR**: `index.html` + `acte-*.html`
+2. **EN**: `index-en.html` + `act-*.html`
 
 ## Stack
 
+HTML/CSS/JS statique. Palette navy + bleu Microsoft avec blanc en accents. Police Inter.
 Static HTML/CSS/JS. Navy palette + Microsoft blue with white accents. Inter font.
 
 ## Local
 
-Open `index.html` in a browser.
+Ouvrir `index.html` (FR) ou `index-en.html` (EN) dans un navigateur.
+Open `index.html` (FR) or `index-en.html` (EN) in a browser.
 
 ---
 
-© Microsoft France · VivaTech 2026 demo
+© Microsoft France · Démo VivaTech 2026
